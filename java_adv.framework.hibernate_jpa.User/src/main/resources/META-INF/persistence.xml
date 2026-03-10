@@ -1,0 +1,37 @@
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence"
+	version="3.0">
+
+	<persistence-unit name="UserPU">
+
+		<!-- ADD ENTITY CLASSES HERE -->
+		<class>assignment.User</class>
+		<class>assignment.Profile</class>
+
+		<properties>
+
+			<property name="jakarta.persistence.jdbc.driver"
+				value="com.mysql.cj.jdbc.Driver" />
+
+			<property name="jakarta.persistence.jdbc.url"
+				value="jdbc:mysql://localhost:3306/user_db" />
+
+			<property name="jakarta.persistence.jdbc.user"
+				value="root" />
+
+			<property name="jakarta.persistence.jdbc.password"
+				value="Adish@2003" />
+
+			<property name="hibernate.hbm2ddl.auto"
+				value="update" />
+
+			<property name="hibernate.show_sql"
+				value="true" />
+
+			<property name="hibernate.dialect"
+				value="org.hibernate.dialect.MySQLDialect" />
+
+		</properties>
+
+	</persistence-unit>
+
+</persistence>
